@@ -30,6 +30,7 @@ const { title } = Astro.props;
   </body>
   <script>
   const themeIcon = document.getElementById('theme-icon') as HTMLImageElement;
+  const BigTheme = document.getElementById('big-vladi') as HTMLImageElement;
     const switchTheme = document.querySelector(
       "[data-switch-theme]"
     ) as HTMLButtonElement;
@@ -41,9 +42,11 @@ const { title } = Astro.props;
     ) {
       document.documentElement.classList.add("dark");
 	  themeIcon.src = '/Icono-22.png';
+    BigTheme.src = './Text-Simple.png';
     } else {
       document.documentElement.classList.remove("dark");
 	  themeIcon.src = '/Icono-21.png';
+    BigTheme.src = './Simple-Text.png';
     }
     if (switchTheme) {
       switchTheme.addEventListener("click", (e) => {
@@ -55,20 +58,24 @@ const { title } = Astro.props;
               doc.classList.add("dark");
               localStorage.setItem("appTheme", "dark");
 			  themeIcon.src = '/Icono-22.png';
+        BigTheme.src = './Text-Simple.png';
             } else {
               document.documentElement.classList.remove("dark");
               localStorage.setItem("appTheme", "light");
 			  themeIcon.src = '/Icono-21.png';
+        BigTheme.src = './Simple-Text.png';
             }
           } else {
             if (doc.classList.contains("dark")) {
               doc.classList.remove("dark");
               localStorage.setItem("appTheme", "light");
 			  themeIcon.src = '/Icono-22.png';
+        BigTheme.src = './Text-Simple.png';
             } else {
               doc.classList.add("dark");
               localStorage.setItem("appTheme", "dark");
 			  themeIcon.src = '/Icono-21.png';
+        BigTheme.src = './Simple-Text.png';
             }
           }
         }
