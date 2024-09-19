@@ -5,21 +5,21 @@ import  Navitem from "../shared/Navitem.astro";
 
 const navItems = [
     {
-        href:"#",
+        href:"#inicio",
         text:"Inicio"
     },
     {
         href:"#acerca",
         text:"Acerca de"
     },
-    {
-        href:"#descon",
-        text:"Desconferencias"
-    },
-    {
-        href:"#charlistas",
-        text:"Charlistas"
-    },
+    // {
+    //     href:"#descon",
+    //     text:"Desconferencias"
+    // },
+    // {
+    //     href:"#charlistas",
+    //     text:"Charlistas"
+    // },
     {
         href:"#patrocinadores",
         text:"Patrocinadores"
@@ -36,7 +36,7 @@ const navItems = [
         <nav class="w-full flex justify-between gap-6 relative">
             <!-- logo -->
             <div class="min-w-max inline-flex relative">
-                <a href="/" class="relative flex items-center ">
+                <a href="#inicio" class="relative flex items-center ">
                     <div class="relative w-12 h-12 overflow-hidden flex rounded-xl">
                         <!-- <span class="absolute w-4 h-4 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
                         <span class="absolute w-4 h-4 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
@@ -58,10 +58,10 @@ const navItems = [
                     })
                     }
                 </ul>
-
+<!-- 
                 <div class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-bg lg:border-0 px-6 lg:px-0">
                     <BtnLink text="Regístrate" href="#cta" className="flex justify-center w-full sm:w-max" variant="primary"/>
-                </div>
+                </div> -->
             </div>
 
 
