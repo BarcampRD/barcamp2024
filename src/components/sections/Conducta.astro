@@ -1,0 +1,63 @@
+---
+import Service from "../cards/Service.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+import Accordion from "./Accordion.astro";
+import AccordionItem from "./AccordionItem.astro";
+
+
+type ServicesProps = {
+    title: string;
+    description: string;
+    icon: string
+};
+
+
+---
+
+<section id="codigo">
+    <Container className="space-y-10 md:sapce-y-12">
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <Title>
+                Código de Conducta
+            </Title>
+
+        </div>
+        <div class="grid sm:grid-cols-1 lg:grid-cols-1 gap-6 lg:gap-8">
+            <Accordion>
+                <AccordionItem header="Código de conducta">
+                    <div class="modal-body">
+                        <h2 class="text-lg md:text-xl font-semibold text-heading-2">Código de conducta</h2>
+                        <p class="md:text-lg text-heading-3">El BarcampRD es un evento de "desconferencias" tecnológicas, cuyo contenido es auto-generado por los participantes y su orientación es hacia el desarrollo de Software y tecnología en general. Nosotros trabajamos para un evento inclusivo,
+                            con sesiones que comprenden diferentes niveles: principiante, intermedio y avanzado. Las desconferencias ofrecen una oportunidad única para interactuar con profesionales del área y la colaboración entre desarrolladores, empresas de
+                            tecnología y emprendedores. Promovemos el intercambio abierto de ideas y expresiones, pero esperamos que todos los participantes (incluidos conferencistas, patrocinadores y voluntarios) cumplan con nuestro código de conducta.</p>
+                        <h3 class="text-lg md:text-xl font-semibold text-heading-2">Comportamiento inaceptable</h3>
+                        <p class="md:text-lg text-heading-3">Nosotros queremos que su participación en este evento sea una experiencia agradable para todos, independientemente del género, la identidad y la expresión de género, la edad, la orientación sexual, la discapacidad, la apariencia física,
+                            el tamaño del cuerpo, la raza, el origen étnico, la religión (o falta de ella) o sus preferencias tecnológicas. No toleramos el acoso de los participantes del evento de ninguna forma. El lenguaje y las imágenes de carácter sexual no
+                            son apropiados para ningún lugar del evento, incluidas charlas, talleres, fiestas, Twitter y otros medios en línea. Los participantes del evento que violen estas reglas pueden ser sancionados o expulsados del evento a discreción de
+                            los organizadores del evento.</p>
+                        <p class="md:text-lg text-heading-3">El comportamiento abusivo incluye, pero no se limita a:</p>
+                        <ul class=" list-disc mb-4 pl-8">
+                            <li class="md:text-lg text-heading-3">Comentarios verbales ofensivos o conductas discriminatorias relacionadas con el género, identidad y expresión de género, orientación sexual, discapacidad, apariencia física, tamaño corporal, edad, raza, nacionalidad, etnia o religión.</li>
+                            <li class="md:text-lg text-heading-3">Uso de imágenes, actividades u otro material sexual durante una presentación.</li>
+                            <li class="md:text-lg text-heading-3">La intimidación deliberada, el acecho o el seguimiento.</li>
+                            <li class="md:text-lg text-heading-3">Acosar tomando fotografía o grabación de videos.</li>
+                            <li class="md:text-lg text-heading-3">Interrupciones continuadas de charlas u otros eventos.</li>
+                            <li class="md:text-lg text-heading-3">Contacto físico inapropiado.</li>
+                            <li class="md:text-lg text-heading-3">Atención sexual no deseada.</li>
+                            <li class="md:text-lg text-heading-3">Abogar por, o alentar, cualquiera de los comportamientos anteriores.</li>
+                        </ul>
+                        <h3 class="text-lg md:text-xl font-semibold text-heading-2">Consecuencias del comportamiento inaceptable</h3>
+                        <p class="md:text-lg text-heading-3">Si un participante incurre en un comportamiento abusivo, los organizadores del evento pueden tomar cualquier acción que estimen oportuna, incluyendo advertencias a quien incurra en el acto o su expulsión del evento.</p>
+                        <h3 class="text-lg md:text-xl font-semibold text-heading-2">Denuncia</h3>
+                        <p class="md:text-lg text-heading-3">Si estás sufriendo algún abuso, has sido testigo de abusos sobre otra persona, o tienes alguna otra preocupación, por favor contacta con el personal del evento inmediatamente a través del correo electrónico logistica@barcamp.org.do Esperamos
+                            que los participantes sigan estas reglas en nuestras conferencias y en los eventos relacionados.Tiene una experiencia comprobada en administración de sistemas/redes y desarrollo de proyectos de monitoreo, incluidas integraciones complejas
+                            y desarrollo de complementos en Python, PHP y PowerShell. Su experiencia se basa en las industrias de servicios minoristas, gubernamentales, de salud y de TI.</p>
+                    </div>
+                </AccordionItem>
+              
+              </Accordion>
+        </div>
+    </Container>
+</section>
