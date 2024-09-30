@@ -1,5 +1,5 @@
 {
-  "name": "barcamp2024-astro",
+  "name": "barcamp2024",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -17,5 +17,9 @@
     "swiper": "^11.1.14",
     "tailwindcss": "^3.4.12",
     "typescript": "^5.6.2"
-  }
+  },
+  "description": "```sh\r npm create astro@latest -- --template basics\r ```",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
