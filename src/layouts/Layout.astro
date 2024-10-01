@@ -31,6 +31,8 @@ const { title } = Astro.props;
   <script>
   const themeIcon = document.getElementById('theme-icon') as HTMLImageElement;
   const BigTheme = document.getElementById('big-vladi') as HTMLImageElement;
+  const lightImage = document.getElementById('light-image');
+  const darkImage = document.getElementById('dark-image');
     const switchTheme = document.querySelector(
       "[data-switch-theme]"
     ) as HTMLButtonElement;
@@ -41,12 +43,16 @@ const { title } = Astro.props;
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.add("dark");
-	  themeIcon.src = '/Icono-22.png';
-    BigTheme.src = './Text-Simple.png';
+	   themeIcon.src = '/Icono-2024-light.png';
+    BigTheme.src = './Icono-des-2024-light.png';
+      lightImage.style.display = 'none';
+      darkImage.style.display = 'block';
     } else {
       document.documentElement.classList.remove("dark");
-	  themeIcon.src = '/Icono-21.png';
-    BigTheme.src = './Simple-Text.png';
+	   themeIcon.src = '/Icono-2024-light.png';
+    BigTheme.src = './Icono-des-2024-light.png';
+      lightImage.style.display = 'block';
+      darkImage.style.display = 'none';
     }
     if (switchTheme) {
       switchTheme.addEventListener("click", (e) => {
@@ -57,25 +63,34 @@ const { title } = Astro.props;
             if (localStorage.getItem("appTheme") === "light") {
               doc.classList.add("dark");
               localStorage.setItem("appTheme", "dark");
-			  themeIcon.src = '/Icono-22.png';
-        BigTheme.src = './Text-Simple.png';
+			  themeIcon.src = '/Icono-2024-light.png';
+              lightImage.style.display = 'none';
+              darkImage.style.display = 'block';
+
+        BigTheme.src = './Icono-des-2024-light.png';
             } else {
               document.documentElement.classList.remove("dark");
               localStorage.setItem("appTheme", "light");
-			  themeIcon.src = '/Icono-21.png';
-        BigTheme.src = './Simple-Text.png';
+			  themeIcon.src = '/Icono-2024-dark.png';
+        BigTheme.src = './Icono-des-2024-dark.png';
+              lightImage.style.display = 'block';
+              darkImage.style.display = 'none';
             }
           } else {
             if (doc.classList.contains("dark")) {
               doc.classList.remove("dark");
               localStorage.setItem("appTheme", "light");
-			  themeIcon.src = '/Icono-22.png';
-        BigTheme.src = './Text-Simple.png';
+			  themeIcon.src = '/Icono-2024-light.png';
+        BigTheme.src = './Icono-des-2024-light.png';
+              lightImage.style.display = 'block';
+              darkImage.style.display = 'none';
             } else {
               doc.classList.add("dark");
               localStorage.setItem("appTheme", "dark");
-			  themeIcon.src = '/Icono-21.png';
-        BigTheme.src = './Simple-Text.png';
+			  themeIcon.src = '/Icono-2024-dark.png';
+        BigTheme.src = './Icono-des-2024-dark.png';
+              lightImage.style.display = 'none';
+              darkImage.style.display = 'block';
             }
           }
         }

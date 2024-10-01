@@ -14,9 +14,10 @@ const {title, navItems} = Astro.props
     <h2 class="capitalze font-semibold text-heading-1 text-xl">
         {title}
     </h2>
-    <ul class="space-y-3 font-medium md:text-lg text-heading-3">
+    <ul class="flex space-x-4 font-medium md:text-lg text-heading-3">
         {navItems.map((navItem)=>(
-            <li>
+             <li class="whitespace-nowrap">
+
                 <a href={navItem.itemLink} class="transition hover:text-primary">
                     {navItem.itemText}
                 </a>
