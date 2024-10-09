@@ -7,52 +7,51 @@ const { testimonial } = Astro.props;
 ---
 
 {
-		<ViewTransitions />
+<ViewTransitions />
 
-    <section class="section">
-      <Container className="container space-y-10 md:sapce-y-12">
-        <div class="row">
-          <div class="text-center max-w-3xl mx-auto space-y-4">
-            <Title>
-                Ediciones Anteriores
-            </Title>
-
-        </div>
-          <div class="col-1">
-            <div class="swiper testimonial-slider">
-              <div class="swiper-wrapper">
-                {testimonial.map(
-                  (item: {
-                    image: string;
-                    description: string;
-                  }) => (
+<section class="section">
+  <Container className="container space-y-10 md:space-y-12">
+    <div class="row">
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <Title>
+          Ediciones Anteriores
+        </Title>
+      </div>
+      <div class="col-1">
+        <div class="swiper testimonial-slider">
+          <div class="swiper-wrapper">
+            {testimonial.map(
+                (item) => (
                     <div class="swiper-slide">
-                      <div class="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light">
+                      <div class="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light testimonial-item">
                         <div class="mt-0 flex items-center">
                           <div class="ml-4">
-                            <img
-                              src={item.image}
-                              class="h5 font-primary font-semibold"
-                            />
-                            <p
-                              set:text={item.description}
-                              class="text-lg md:text-xl font-semibold text-heading-2 text-center"
-                            />
+                            <a href={item.link} target="_blank" rel="noopener noreferrer">
+                              <img
+                                  src={item.image}
+                                  class="h5 font-primary font-semibold"
+                              />
+                              <p
+                                  class="hover-text text-lg md:text-xl font-semibold text-heading-2 text-center"
+                              >
+                                {item.description}
+                              </p>
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
-                  )
-                )}
-              </div>
-              <div class="testimonial-slider-pagination mt-3  items-center justify-center text-center " />
-            </div>
+                )
+            )}
           </div>
+          <div class="testimonial-slider-pagination mt-3 items-center justify-center text-center" />
         </div>
       </div>
-    </section>
+    </div>
+  </Container>
+</section>
+    }
 
-}
 
 <script>
   import Swiper from "swiper";
@@ -87,3 +86,23 @@ const { testimonial } = Astro.props;
     });
   });
 </script>
+<style>
+  .testimonial-item {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .testimonial-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el puntero */
+  }
+
+  .hover-text {
+    color:#FFFF ; /* Color de texto normal */
+    transition: color 0.3s ease; /* Transición del color */
+  }
+
+  .testimonial-item:hover .hover-text {
+    color: #008CF1; /* Cambia a otro color al pasar el puntero, puedes personalizarlo */
+  }
+</style>
+
+
