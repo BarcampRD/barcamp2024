@@ -1,0 +1,160 @@
+---
+import {eventos} from "../../data/eventos";
+import Title from "../shared/Title.astro";
+---
+
+<section id="desconferencias" class="desconferencias-container p-8 md:px-16 lg:px-32">
+    <div class="text-center max-w-3xl mx-auto space-y-6">
+        <Title>
+           Desconferencias
+        </Title>
+
+    </div>
+    <div class="mt-6">
+        <!-- Contenido adicional aquí -->
+    </div>
+    <div class="tabla-contenido">
+        {eventos.map((evento) => (
+                <div class="evento-card" key={evento.horario + evento.ponente}>
+                    <div class="horario">{evento.horario}</div>
+                    <div class="contenido">
+                        <div class="actividad">
+                            <!--<strong>{evento.actividad}</strong>-->
+                            <strong class="text-lg md:text-xl font-semibold text-heading-2">{evento.actividad}</strong>
+                            <div class="ponente"><strong>{evento.ponente}</strong></div>
+                            <div class="etiquetas">
+                                {evento.etiquetas.map((etiqueta) => (
+                                        <span class="etiqueta" key={etiqueta}><strong>{etiqueta}</strong></span>
+                                ))}
+                            </div>
+                            <p class="text-lg md:text-xl font-semibold text-heading-2" style="font-size: 0.875rem;">{evento.detalles}</p>
+                        </div>
+                    </div>
+                    <div class="lugar">
+                        <span class="text-sm md:text-lg font-semibold text-heading-2">{evento.lugar}</span>
+                    </div>
+                </div>
+        ))}
+    </div>
+</section>
+
+<style>
+    .desconferencias-container {
+        padding: 2rem;
+        color: #fff;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+
+
+    .titulo-seccion {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #e0e0e0;
+    }
+
+    .tabla-contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .evento-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease-in-out;
+        gap: 1rem;
+        border: 2px solid #ffff; /* Se agregó el borde con el color especificado */
+    }
+
+    .evento-card:hover {
+        transform: scale(1.02);
+    }
+
+    .horario {
+        font-size: 1.2rem;
+        color: #008CF1;
+        font-weight: bold;
+        flex: 0 0 120px;
+        text-align: center;
+    }
+
+    .contenido {
+        flex: 1;
+    }
+
+    .actividad {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ponente {
+        color: #F6C23D;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+
+    .detalles {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        color: #d1d1d1;
+    }
+
+    .etiquetas {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+    }
+
+    .etiqueta {
+        background: linear-gradient(to bottom right, #00CBFE, #008CF1, #002B4A);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        padding: 0.3rem 0.6rem;
+        border: 1px solid #002B4A;
+        border-radius: 6px;
+        font-size: 0.8rem;
+    }
+
+
+    .lugar {
+        color: #008CF1;
+        padding: 0.5rem 1rem;
+        border: 1px solid #002B4A;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+
+    @media (max-width: 768px) {
+        .evento-card {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        .horario, .lugar {
+            flex: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .horario {
+            margin-bottom: 0.5rem;
+        }
+
+        .lugar {
+            margin-top: 0.5rem;
+        }
+    }
+</style>
+

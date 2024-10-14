@@ -3,102 +3,65 @@ import GroupFooterNav from "../blocks/GroupFooterNav.astro";
 import Container from "../shared/Container.astro";
 import FooterNav from "../shared/FooterNav.astro";
 import Paragraph from "../shared/Paragraph.astro";
-import Button from "../shared/Button.astro";
-
-
-
-const footerSupport = [
-    {
-        itemText: "Pricing",
-        itemLink: "#"
-    },
-    {
-        itemText: "Guides",
-        itemLink: "#"
-    },
-    {
-        itemText: "FAQ",
-        itemLink: "#"
-    },
-    {
-        itemText: "Contact",
-        itemLink: "#"
-    }
-];
 
 const footerNav = [
     {
-        href:"#inicio",
-        text:"Inicio"
+        itemText:"Inicio",
+        itemLink:"#inicio"
     },
     {
-        href:"#acerca",
-        text:"Acerca de"
+        itemText:"Acerca de",
+        itemLink:"#acerca"
     },
     // {
-    //     href:"#descon",
-    //     text:"Desconferencias"
+    //     itemText:"Desconferencias",
+    //     itemLink:"#desconferencias"
     // },
     // {
-    //     href:"#charlistas",
-    //     text:"Charlistas"
+    //     itemText:"Charlistas",
+    //     itemLink:"#speakers"
     // },
     {
-        href:"#patrocinadores",
-        text:"Patrocinadores"
+        itemText:"Patrocinadores",
+        itemLink:"#patrocinadores"
     },
     {
-        href:"#codigo",
-        text:"Codigo de Conducta"
-    },
-];
-
-const footerLegal = [
-    {
-        itemText: "Claim",
-        itemLink: "#"
-    },
-    {
-        itemText: "Privacy",
-        itemLink: "#"
-    },
-    {
-        itemText: "Terms",
-        itemLink: "#"
+        itemText:"Codigo de Conducta",
+        itemLink:"#codigo"
     }
-];
+]
 ---
+<div class="mt-16"></div>
+<footer class="relative bg-gradient-to-tr from-gray-100 to-gray-200 dark:from-gray-900 pt-28 rounded-t-3xl">
+    <Container className="pb-8 relative overflow-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-3 lg:gap-12 relative">
+            <!-- Sección Barcamp -->
+            <div class="flex flex-col items-center"> <!-- Cambié aquí para centrar -->
+                <!-- Inserta aquí la imagen -->
+                <img src="/Icono-des-2024-light.png" alt="Descripción de la imagen" class="mt-4 max-w-xs" />
 
-<footer class="footer-container">
-    <div class="footer-content">
-        <!-- Imagen del logo -->
-        <div class="footer-logo">
-            <img src="/Icono-des-2024-light.png" alt="Logo Barcamp" class="logo" />
+                <!-- Enlace centrado debajo de la imagen -->
+                <a href="https://2023.barcamp.org.do/" class="relative flex items-center gap-3 mt-4 text-heading-1 hover:text-[#008CF1] transition-colors duration-200 hover:shadow-lg transition-shadow duration-200">
+                    <div class="inline-flex text-lg font-semibold">
+                        Ir al evento del 2023
+                    </div>
+                </a>
+                <p class="mt-4 text-sm text-gray-400">Un evento abierto para compartir y aprender de la comunidad.</p>
+            </div>
+
+            <!-- Navegación -->
+            <GroupFooterNav>
+                <FooterNav title={"Navegación"} navItems={footerNav} />
+            </GroupFooterNav>
         </div>
-
-        <!-- Enlaces de navegación del footer -->
-        <nav class="footer-nav">
-            <a href="/" class="footer-link">Inicio</a>
-            <a href="#acerca" class="footer-link">Acerca de</a>
-            <a href="#patrocinadores" class="footer-link">Patrocinadores</a>
-            <a href="#codigo" class="footer-link">Código de conducta</a>
-        </nav>
-    </div>
-
-    <!-- Contenedor para alinear el botón a la izquierda -->
-    <div class="button-container">
-        <a href="https://2023.barcamp.org.do/" target="_blank" class="transition hover:text-heading-1 hover:scale-105">
-            <Button variant={"primary"} className={"min-w-max text-white py-2 px-4"}>
-                <span class="sm:flex relative z-[5] lg:text-xl">
-                    Ir al evento del 2023
-                </span>
-            </Button>
-        </a>
-    </div>
+    </Container>
 
 
-    <!-- Barra de redes sociales y derechos de autor -->
-    <div class="bg-gradient-to-tl from-box-bg py-2 relative">
+
+
+
+    <!-- Sección inferior del footer -->
+    <div class="bg-gradient-to-tl from-box-bg py-4 relative">
         <Container>
             <div class="flex justify-between items-center gap-6 md:text-lg text-heading-3">
                 <div> Copyright © 2024 CICC PUCMM </div>
@@ -136,56 +99,3 @@ const footerLegal = [
         </Container>
     </div>
 </footer>
-
-
-
-<style>
-    .button-container {
-        margin-left: -680px; /* Alinea el botón a la izquierda */
-        margin-top: 1rem; /* Espacio entre el footer y el botón */
-    }
-
-
-    .footer-container {
-        background-color: var(--background-color, #030712); /* Asegura que el fondo sea el mismo que el de la página */
-        padding: 2rem;
-        text-align: center; /* Alineación central para el texto del footer */
-    }
-
-    .footer-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem; /* Espacio entre footer-content y la barra de redes sociales */
-    }
-
-    .footer-logo {
-        margin-right: 2rem;
-    }
-
-    .footer-logo img.logo {
-        width: 300px; /* Tamaño reducido del logo */
-        max-width: 50%; /* Se adapta al contenedor en dispositivos más pequeños */
-        height: auto; /* Mantiene la proporción */
-    }
-
-    .footer-link {
-        color: white;
-        margin-right: 2rem;
-        text-decoration: none;
-        font-size: 1rem;
-        color: #008CF1;
-    }
-
-    .footer-link:hover {
-        text-decoration: underline;
-    }
-
-    .bg-gradient-to-tl {
-        /* Puedes agregar más estilos aquí si es necesario */
-        /* Esto controla la apariencia de la barra de redes sociales */
-        background: linear-gradient(to top left, #030712, #030712); /* Ajusta los colores del gradiente */
-    }
-</style>
-
-

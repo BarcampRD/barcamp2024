@@ -7,12 +7,16 @@ import Testimonial from '../components/sections/Testimonial.astro';
 import { allEvents } from "../data/allEvents.ts";
 import Brands from '../components/sections/Brands.astro';
 import Conducta from '../components/sections/Conducta.astro';
+import Desconferencias from "../components/sections/Desconferencias.astro";
+import Speakers from "../components/sections/Speakers.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
 		<Hero/>
 		<AboutUs/>
+		<!--<Speakers/>-->
+		<!--<Desconferencias/>-->
 		<Testimonial testimonial={allEvents} />
 		<Brands/>
 		<Conducta/>
