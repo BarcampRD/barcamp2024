@@ -1,17 +1,17 @@
 ---
-import {eventos} from "../../data/eventos";
+// Importar eventos y componentes necesarios
+import { eventos } from "../../data/eventos";
 import Title from "../shared/Title.astro";
 ---
 
 <section id="desconferencias" class="desconferencias-container p-8 md:px-16 lg:px-32">
     <div class="text-center max-w-3xl mx-auto space-y-6">
         <Title>
-           Desconferencias
+            Desconferencias
         </Title>
-
     </div>
     <div class="mt-6">
-        <!-- Contenido adicional aquí -->
+
     </div>
     <div class="tabla-contenido">
         {eventos.map((evento) => (
@@ -19,7 +19,6 @@ import Title from "../shared/Title.astro";
                     <div class="horario">{evento.horario}</div>
                     <div class="contenido">
                         <div class="actividad">
-                            <!--<strong>{evento.actividad}</strong>-->
                             <strong class="text-lg md:text-xl font-semibold text-heading-2">{evento.actividad}</strong>
                             <div class="ponente"><strong>{evento.ponente}</strong></div>
                             <div class="etiquetas">
@@ -46,7 +45,6 @@ import Title from "../shared/Title.astro";
         margin: 0 auto;
         border-radius: 12px;
     }
-
 
     .titulo-seccion {
         font-size: 2rem;
@@ -124,7 +122,6 @@ import Title from "../shared/Title.astro";
         font-size: 0.8rem;
     }
 
-
     .lugar {
         color: #008CF1;
         padding: 0.5rem 1rem;
@@ -133,7 +130,6 @@ import Title from "../shared/Title.astro";
         text-align: center;
         font-size: 0.9rem;
     }
-
 
     @media (max-width: 768px) {
         .evento-card {
@@ -157,4 +153,3 @@ import Title from "../shared/Title.astro";
         }
     }
 </style>
-
