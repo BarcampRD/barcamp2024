@@ -10,12 +10,10 @@ import Title from "../shared/Title.astro";
             Desconferencias
         </Title>
     </div>
-    <div class="mt-6">
-
-    </div>
+    <div class="mt-6"></div>
     <div class="tabla-contenido">
         {eventos.map((evento) => (
-                <div class="evento-card" key={evento.horario + evento.ponente}>
+                <div class="evento-card" key={evento.horario + evento.ponente}> <!-- El key se mantiene aquí -->
                     <div class="horario">{evento.horario}</div>
                     <div class="contenido">
                         <div class="actividad">
@@ -23,7 +21,7 @@ import Title from "../shared/Title.astro";
                             <div class="ponente"><strong>{evento.ponente}</strong></div>
                             <div class="etiquetas">
                                 {evento.etiquetas.map((etiqueta) => (
-                                        <span class="etiqueta" key={etiqueta}><strong>{etiqueta}</strong></span>
+                                        <span class="etiqueta"><strong>{etiqueta}</strong></span> <!-- Aquí se ha eliminado el key -->
                                 ))}
                             </div>
                             <p class="text-lg md:text-xl font-semibold text-heading-2" style="font-size: 0.875rem;">{evento.detalles}</p>
