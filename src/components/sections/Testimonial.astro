@@ -21,13 +21,37 @@ const { testimonial } = Astro.props;
         <div class="swiper testimonial-slider">
           <div class="swiper-wrapper">
             {testimonial.map((item: TestimonialItem) => (
+          <div class="swiper-slide">
+            <div class="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light testimonial-item">
+              <div class="mt-0">
+                <div class="grid grid-cols-2 gap-2">
+                  {item.image.slice(0, 4).map((imgSrc) => (
+                    <div  class="w-48 h-48"> 
+                      <img
+                        src={imgSrc}
+                        class="w-full h-full object-cover rounded-md"
+                        alt={item.description}
+                      />
+                    </div>
+                  ))}
+                </div>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <p class="hover-text text-lg md:text-xl font-semibold text-heading-2 text-center mt-4">
+                    {item.description}
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+            ))}
+            <!-- {testimonial.map((item: TestimonialItem) => (
                 <div class="swiper-slide">
                   <div class="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light testimonial-item">
                     <div class="mt-0 flex items-center">
                       <div class="ml-4">
                         <a href={item.link} target="_blank" rel="noopener noreferrer">
                           <img
-                              src={item.image}
+                              src={item.image[0]}
                               class="h5 font-primary font-semibold"
                               alt={item.description}
                           />
@@ -41,7 +65,7 @@ const { testimonial } = Astro.props;
                     </div>
                   </div>
                 </div>
-            ))}
+            ))} -->
           </div>
           <div class="testimonial-slider-pagination mt-3 items-center justify-center text-center" />
         </div>

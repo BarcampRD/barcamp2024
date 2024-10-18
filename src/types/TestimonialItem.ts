@@ -1,6 +1,6 @@
 
 export interface TestimonialItem {
-    image: string;
+    image: string[];
     description: string;
     link: string;
 }
