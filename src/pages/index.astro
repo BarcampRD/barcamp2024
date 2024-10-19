@@ -9,16 +9,19 @@ import Brands from '../components/sections/Brands.astro';
 import Conducta from '../components/sections/Conducta.astro';
 import Desconferencias from "../components/sections/Desconferencias.astro";
 import Speakers from "../components/sections/Speakers.astro";
+import Location from '../components/sections/Location.astro';
+import Invitado from '../components/sections/Invitado.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
 		<Hero/>
 		<AboutUs/>
-		<!--<Speakers/>-->
+		<Invitado/>
 		<!--<Desconferencias/>-->
 		<Testimonial testimonial={allEvents} />
 		<Brands/>
+		<Location/>
 		<Conducta/>
 	</main>
 </Layout>
