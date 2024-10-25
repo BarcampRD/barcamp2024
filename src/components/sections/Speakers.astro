@@ -1,75 +1,97 @@
 ---
-import { speakers } from '../../data/speakers';
-import Title from "../shared/Title.astro";
+import { speakers } from '../../data/speakers'; // Asegúrate de que esta ruta sea correcta
+import Title from '../shared/Title.astro';
 ---
 
-<section id="speakers" class="p-8 md:px-16 lg:px-32" x-data="{ showModal: false, selectedSpeaker: null }">
-    <!-- Título centrado -->
+<section id="speakers" class="p-8 md:px-16 lg:px-32">
     <div class="text-center mb-10">
         <Title class="text-3xl md:text-3xl font-semibold text-heading-2">
             Charlistas
         </Title>
     </div>
 
-    <!-- Grid de tarjetas de speakers -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {speakers.map((speaker, index) => (
-                <div
-                        class="bg-white shadow-lg rounded-lg border-4 hover:scale-105 transform transition-all duration-300 mx-auto max-w-md"
-                        style={`border-color: ${speaker.borderColor};`}
-                        @click="
-                    selectedSpeaker = {
-                        name: $el.getAttribute('data-name'),
-                        title: $el.getAttribute('data-title'),
-                        charla: $el.getAttribute('data-charla'),
-                        details: $el.getAttribute('data-details'),
-                        imageUrl: $el.getAttribute('data-imageUrl')
-                    };
-                    showModal = true"
-                        data-name={speaker.name}
-                        data-title={speaker.title}
-                        data-charla={speaker.charla}
-                        data-details={speaker.details}
-                        data-imageUrl={speaker.imageUrl}
-                >
-                    <div class="relative h-[200px] w-full rounded-t-lg overflow-hidden">
-                        <img src={speaker.imageUrl} alt={speaker.name} class="w-full h-full object-cover" />
-                    </div>
-                    <div class="p-4 text-center bg-gray-50 rounded-b-lg">
-                        <h2 class="text-2xl font-bold text-indigo-600">{speaker.name}</h2>
-                        <p class="mt-1 text-gray-500 text-md">{speaker.title}</p>
-                        <p class="mt-2 text-gray-600 text-md font-semibold">{speaker.charla}</p>
-                        <div class="mt-4">
-                        <span class="inline-block px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-[#F6E05E] via-[#F6C23D] to-[#D29B20] rounded-full">
-                            Más info
-                        </span>
+        {speakers.map((speaker) => {
+            const { id, name, title, charla, details, borderColor, imageUrl } = speaker;
+            return (
+                    <div
+                            key={id}
+                            class="bg-white shadow-lg rounded-lg border-4 hover:scale-105 transform transition-all duration-300 mx-auto max-w-md"
+                            style={`border-color: ${borderColor}`}
+                            data-id={id}
+                            data-src={imageUrl}
+                            data-name={name}
+                            data-title={title}
+                            data-charla={charla}
+                            data-details={details}
+                    >
+                        <div class="relative h-[200px] w-full rounded-t-lg overflow-hidden">
+                            <img
+                                    src={imageUrl}
+                                    alt={name}
+                                    class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="p-4 text-center bg-gray-50 rounded-b-lg">
+                            <h2 class="text-2xl font-bold text-indigo-600">{name}</h2>
+                            <p class="mt-1 text-gray-500 text-md">{title}</p>
+                            <p class="mt-2 text-gray-600 text-md font-semibold">{charla}</p>
+                            <div class="mt-4">
+              <span class="inline-block px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-[#F6E05E] via-[#F6C23D] to-[#D29B20] rounded-full">
+                Más info
+              </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-        ))}
+            );
+        })}
     </div>
 
-    <!-- Modal de información del speaker -->
-    <div
-            class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50"
-            x-show="showModal"
-            @click="showModal = false"
-    >
-        <div class="bg-white p-8 rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto relative" @click.stop>
-            <button
-                    class="absolute top-0 right-2 text-gray-600 hover:text-gray-900 text-4xl font-bold"
-                    @click="showModal = false"
-            >
+    <div id="modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white p-8 rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto relative">
+            <button id="close-modal" class="absolute top-0 right-2 text-gray-600 hover:text-gray-900 text-4xl font-bold">
                 &times;
             </button>
-
-            <img :src="selectedSpeaker.imageUrl" :alt="selectedSpeaker.name" class="w-full h-64 object-cover rounded-lg mb-4" />
-            <h2 class="text-2xl font-bold" x-text="selectedSpeaker.name"></h2>
-            <p class="text-gray-600 mt-2" x-text="selectedSpeaker.title"></p>
-            <p class="text-gray-600 mt-2" x-text="selectedSpeaker.charla"></p>
-            <p class="mt-4" x-text="selectedSpeaker.details"></p>
+            <img id="modal-image" class="w-full h-64 object-cover rounded-lg mb-4" />
+            <h2 id="modal-name" class="text-2xl font-bold"></h2>
+            <p id="modal-title" class="text-gray-600 mt-2"></p>
+            <p id="modal-charla" class="text-gray-600 mt-2"></p>
+            <p id="modal-details" class="mt-4"></p>
         </div>
     </div>
-</section>
 
-<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!--<script>-->
+    <!--    document.addEventListener("DOMContentLoaded", () => {-->
+    <!--        const speakerCards = document.querySelectorAll('.speaker-card');-->
+    <!--        const modal = document.getElementById('modal');-->
+    <!--        const modalImage = document.getElementById('modal-image');-->
+    <!--        const modalName = document.getElementById('modal-name');-->
+    <!--        const modalTitle = document.getElementById('modal-title');-->
+    <!--        const modalCharla = document.getElementById('modal-charla');-->
+    <!--        const modalDetails = document.getElementById('modal-details');-->
+    <!--        const closeModalButton = document.getElementById('close-modal');-->
+
+    <!--        speakerCards.forEach(card => {-->
+    <!--            card.addEventListener('click', () => {-->
+    <!--                modalImage.src = card.dataset.src;-->
+    <!--                modalName.textContent = card.dataset.name;-->
+    <!--                modalTitle.textContent = card.dataset.title;-->
+    <!--                modalCharla.textContent = card.dataset.charla;-->
+    <!--                modalDetails.textContent = card.dataset.details;-->
+
+    <!--                modal.classList.remove('hidden');-->
+    <!--            });-->
+    <!--        });-->
+
+    <!--        closeModalButton.addEventListener('click', () => {-->
+    <!--            modal.classList.add('hidden');-->
+    <!--        });-->
+
+    <!--        window.addEventListener('click', (e) => {-->
+    <!--            if (e.target === modal) {-->
+    <!--                modal.classList.add('hidden');-->
+    <!--            }-->
+    <!--        });-->
+    <!--    });-->
+    <!--</script>-->
+</section>
