@@ -4,8 +4,8 @@ export const speakers = [
     name: "Joas Yaminaki",
     title: "Backend Developer",
     charla: "Golang in Practice: Boosting Efficiency with Go Routines ",
-    imageUrl: "public/speakers img/Joas Yaminaki.JPG",
-    borderColor: "#00cbfe", // Color de borde personalizado
+    imageUrl: "public/speakers no BG/Joas Yaminaki 2.png",
+    borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Desarrollador Backend Especializado en Go (Golang) | Creación de soluciones escalables y de alto rendimiento",
   },
@@ -15,8 +15,8 @@ export const speakers = [
     title: "Technical Advisor & Configuration Manager",
     charla:
       " Del Código a la Conexión Emocional: El Rol de la Experiencia (XM) en Proyectos Tecnológicos",
-    imageUrl: "public/speakers img/Jonathan Morales.png",
-    borderColor: "#00cbfe", // Color de borde personalizado
+    imageUrl: "public/speakers no BG/Jonathan Morales 1.png",
+    borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Ingeniero en Sistemas y Máster en Alta Gerencia con mención en Finanzas por el Instituto Tecnológico de Santo Domingo (INTEC)." +
       "Con más de 15 años de experiencia, he trabajado en la adopción de marcos de buenas prácticas globales, tales como ITIL, ISO/IEC 20000, ISO/IEC 27001, COBIT, y PMBOK, orientados a lograr una eficiencia operativa alineada con el negocio en el ámbito de TI. Mi enfoque se centra en la integración de personas, procesos y tecnología para generar mejoras significativas y sostenibles.\n" +
@@ -28,8 +28,8 @@ export const speakers = [
     name: "Juan Polanco",
     title: "Software Developer",
     charla: "Desplegando Deep Learning a producción con ONNX",
-    imageUrl: "public/speakers img/Juan Polanco.jpeg",
-    borderColor: "#00cbfe", // Color de borde personalizado
+    imageUrl: "public/speakers no BG/Juan Polanco 3.png",
+    borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Soy un ingeniero telemático y desarrollador de software al que le gusta crear software relacionado especialmente con la web, el aprendizaje automático y la inteligencia artificial. Entre los proyectos que tengo como parte de mis estudios de Machine Learning, hay un modelo que utiliza datos del mercado de bonos de Estados Unidos que me permite estimar el precio de un bono en función de sus últimas 10 transacciones. Quiero combinar mi experiencia como desarrollador de software completo y mi conocimiento de aprendizaje automático para crear productos que resuelvan problemas del mundo real.",
   },
@@ -38,8 +38,8 @@ export const speakers = [
     name: "Jose Martinez",
     title: "Software Engineer",
     charla: "Ingeniería de Datos con Apache Airflow",
-    imageUrl: "public/speakers img/Jose Manuel Martínez.jpeg",
-    borderColor: "#00cbfe", // Color de borde personalizado
+    imageUrl: "public/speakers no BG/Jose Manuel Martínez 3.png",
+    borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Ingeniero de software, con experiencia en desarrollo de software full stack, gestión de proyectos y proyectos de aprendizaje automático. He trabajado en el desarrollo de productos innovadores para clientes en colaboración con múltiples equipos de software y múltiples pilas de tecnología, así como en la mejora y el desarrollo de herramientas empresariales internas para impulsar la productividad y la eficiencia de los procesos.\n" +
       "\n" +
@@ -52,8 +52,8 @@ export const speakers = [
     name: "Ruth Castillo",
     title: "IT Consultant",
     charla: "Más allá de Scrum: Ágil Disciplinado",
-    imageUrl: "public/speakers img/Ruth Castillo.jpeg",
-    borderColor: "#00cbfe", // Color de borde personalizado
+    imageUrl: "public/speakers no BG/Ruth Castillo 2.png",
+    borderColor: "#008CF1", // Color de borde personalizado
     details: "",
   },
   {
@@ -61,8 +61,8 @@ export const speakers = [
     name: "Yhorby Matias",
     title: "DevOps Engineer",
     charla: "Crea Entornos de Prueba Automáticos con Azure y Argo CD",
-    imageUrl: "public/speakers img/Yhorby Matias.jpeg",
-    borderColor: "#00cbfe", // Color de borde personalizado
+    imageUrl: "public/speakers no BG/Yhorby Matias 2.png",
+    borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Profesional con 9 años de experiencia con Licenciatura en Ciencias de la Computación (BSCS). Comencé mi carrera en TI \n" +
       "como desarrollador back-end y trabajé durante varios años en este rol, luego hice el cambio al rol de DevOps, \n" +
@@ -78,8 +78,8 @@ export const speakers = [
     name: "Juan Gonzalez",
     title: "Ingeniero Electrico",
     charla: "Innovación, el motor del desarrollo tecnológico",
-    imageUrl: "public/speakers img/Juan González.jpeg",
-    borderColor: "#00cbfe", // Color de borde personalizado
+    imageUrl: "public/speakers no BG/Juan González 2.png",
+    borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Más de 15 años de experiencia en instalaciones eléctricas, diseño de sistemas de iluminación, asesor energético y consultor de transformación digital.\n",
   },
@@ -88,8 +88,40 @@ export const speakers = [
     name: "Karla Aquino",
     title: "IT Consultant",
     charla: "Beyond Code: Integrated Security with DevSecOps and SSDLC",
-    imageUrl: "public/speakers img/Karla Aquino.jpeg",
-    borderColor: "#00cbfe", // Color de borde personalizado
+    imageUrl: "public/speakers no BG/Karla Aquino 3.png",
+    borderColor: "#008CF1", // Color de borde personalizado
     details: "_________________________NO TIENE________________________",
   },
+  {
+    id: 9,
+    name: "Ines Montero",
+    title: " Full Stack Web Developer ",
+    charla: "¡Tu Web en Modo Turbo! \n" +
+        "Hacks para Desarrolladores\n" +
+        " Pro",
+    imageUrl: "public/speakers no BG/Ines Montero 1.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Ingeniero en sistemas informáticos apasionado, diligente y altamente persistente con más de dos años de experiencia en desarrollo web frontend y comercio electrónico. \n" +
+        "Profesional dedicada que busca la excelencia y el aprendizaje constante en su trabajo trabajando con la gestión de proyectos web utilizando metodologías ágiles y el método SCRUM.",
+  },
+  {
+    id: 10,
+    name: "Albinson Arias",
+    title: "Mobile Developer",
+    charla: "Unleashing Full-Stack  Flutter: Building Powerful Apps with Serverpod ",
+    imageUrl: "public/speakers no BG/Albison Arias 1.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Desarrollador móvil entusiasta con más de 3 años creando experiencias móviles multiplataforma de alta calidad. Experto en UI/UX, código limpio y patrones de arquitectura. Trabajador de equipo, con ganas de aprender y apasionado por el futuro del Desarrollo Móvil.",
+  },
+  {
+    id: 11,
+    name: "Gregory Pilar",
+    title: "Mobile Developer",
+    charla: "Unleashing Full-Stack  Flutter: Building Powerful Apps with Serverpod ",
+    imageUrl: "public/speakers no BG/Gregory Pilar.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Desarrollador móvil entusiasta con más de 3 años creando experiencias móviles multiplataforma de alta calidad. Experto en UI/UX, código limpio y patrones de arquitectura. Trabajador de equipo, con ganas de aprender y apasionado por el futuro del Desarrollo Móvil.",
+  },
 ];
+
+
