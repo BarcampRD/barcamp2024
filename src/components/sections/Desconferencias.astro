@@ -13,7 +13,7 @@ import Title from "../shared/Title.astro";
     <div class="mt-6"></div>
     <div class="tabla-contenido">
         {eventos.map((evento) => (
-                <div class="evento-card"> <!-- Sin el key -->
+                <div class="evento-card">
                     <div class="horario">{evento.horario}</div>
                     <div class="contenido">
                         <div class="actividad">
@@ -66,7 +66,7 @@ import Title from "../shared/Title.astro";
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: transform 0.2s ease-in-out;
         gap: 1rem;
-        border: 2px solid #ffff; /* Se agregó el borde con el color especificado */
+        border: 2px solid #008CF1; /* Se agregó el borde con el color especificado */
     }
 
     .evento-card:hover {
@@ -91,7 +91,7 @@ import Title from "../shared/Title.astro";
     }
 
     .ponente {
-        color: #F6C23D;
+        color: #e66418;
         font-size: 0.9rem;
         margin-top: 0.5rem;
     }
@@ -107,6 +107,7 @@ import Title from "../shared/Title.astro";
         gap: 0.5rem;
         flex-wrap: wrap;
         margin-top: 0.5rem;
+        padding-bottom: 6px;
     }
 
     .etiqueta {
