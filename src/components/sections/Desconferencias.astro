@@ -4,14 +4,14 @@ import { eventos } from "../../data/eventos";
 import Title from "../shared/Title.astro";
 ---
 
-<section id="desconferencias" class="desconferencias-container p-8 md:px-16 lg:px-32">
+<section id="desconferencias" class="desconferencias-container p-8 md:px-16 lg:px-32 ">
     <div class="text-center max-w-3xl mx-auto space-y-6">
         <Title>
             Desconferencias
         </Title>
     </div>
     <div class="mt-6"></div>
-    <div class="tabla-contenido">
+    <div class="tabla-contenido ">
         {eventos.map((evento) => (
                 <div class="evento-card">
                     <div class="horario">{evento.horario}</div>
@@ -42,6 +42,7 @@ import Title from "../shared/Title.astro";
         max-width: 1000px;
         margin: 0 auto;
         border-radius: 12px;
+        max-width: 1300px;
     }
 
     .titulo-seccion {
