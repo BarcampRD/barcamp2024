@@ -126,7 +126,7 @@ export const speakers = [
     title: "Software Developer",
     charla:
       "The Upgrade Journey: Real-World Stories of Symfony Version Migrations",
-    imageUrl: "public/speakersnoBG/FelixValerio1.png",
+    imageUrl: "speakersnoBG/FelixValerio1.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Hi 👋, I'm Felix Valerio\n" +
