@@ -4,7 +4,7 @@ export const speakers = [
     name: "Joas Yaminaki",
     title: "Backend Developer",
     charla: "Golang in Practice: Boosting Efficiency with Go Routines ",
-    imageUrl: "public/speakersnoBG/JoasYaminaki2.png",
+    imageUrl: "/speakersnoBG/JoasYaminaki2.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Soy un desarrollador senior de Golang con más de 5 años de experiencia profesional, especializado en la creación de aplicaciones escalables y de alto rendimiento. A lo largo de mi carrera, he trabajado con diversos equipos en varios países, colaborando en proyectos que requieren simultaneidad avanzada, optimización de recursos y resolución de problemas del mundo real utilizando Go. Mi experiencia abarca diversas industrias y me apasiona compartir conocimientos prácticos y mejores prácticas con la comunidad Go. En esta charla, aprovecharé mi experiencia internacional para brindar perspectivas valiosas y conclusiones prácticas para los asistentes que buscan mejorar sus habilidades de desarrollo de Go. Se anima a los asistentes a traer computadoras portátiles con Go instalado para participar de manera práctica.",
@@ -15,7 +15,7 @@ export const speakers = [
     title: "Technical Advisor & Configuration Manager",
     charla:
       " Del Código a la Conexión Emocional: El Rol de la Experiencia (XM) en Proyectos Tecnológicos",
-    imageUrl: "public/speakersnoBG/JonathanMorales1.png",
+    imageUrl: "/speakersnoBG/JonathanMorales1.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Ingeniero en Sistemas y Máster en Alta Gerencia con mención en Finanzas por el Instituto Tecnológico de Santo Domingo (INTEC)." +
@@ -28,7 +28,7 @@ export const speakers = [
     name: "Juan Polanco",
     title: "Software Developer",
     charla: "Desplegando Deep Learning a producción con ONNX",
-    imageUrl: "public/speakersnoBG/JuanPolanco3.png",
+    imageUrl: "/speakersnoBG/JuanPolanco3.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Soy un ingeniero telemático y desarrollador de software al que le gusta crear software relacionado especialmente con la web, el aprendizaje automático y la inteligencia artificial. Entre los proyectos que tengo como parte de mis estudios de Machine Learning, hay un modelo que utiliza datos del mercado de bonos de Estados Unidos que me permite estimar el precio de un bono en función de sus últimas 10 transacciones. Quiero combinar mi experiencia como desarrollador de software completo y mi conocimiento de aprendizaje automático para crear productos que resuelvan problemas del mundo real.",
@@ -38,7 +38,7 @@ export const speakers = [
     name: "Jose Martinez",
     title: "Software Engineer",
     charla: "Ingeniería de Datos con Apache Airflow",
-    imageUrl: "public/speakersnoBG/JoseManuelMartínez3.png",
+    imageUrl: "/speakersnoBG/JoseManuelMartinez3.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Ingeniero de Software en Flatiron Software Corp. Santiaguero, egresado de la PUCMM y colaborador del Barcamp. Apasionado de los datos con experiencia trabajando con ingeniería de datos en diferentes tecnologías y casos de uso.",
@@ -48,7 +48,7 @@ export const speakers = [
     name: "Ruth Castillo",
     title: "IT Consultant",
     charla: "Más allá de Scrum: Ágil Disciplinado",
-    imageUrl: "public/speakersnoBG/RuthCastillo2.png",
+    imageUrl: "/speakersnoBG/RuthCastillo2.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Ruth Castillo, Ing. Telemática de la Pontificia Universidad Católica Madre y Maestra (PUCMM), Magister en Dirección de Proyecto de la Escuela de Organización Industrial (EOI) Doble titulación con PUCMM, Profesional en Dirección de Proyectos (PMP®) Certificada por el Project Management Institute (PMI®) desde el 2020. Me describo como una entusiasta de gestionar proyectos que permitan la trasformacion digital y de la educacion.",
@@ -58,7 +58,7 @@ export const speakers = [
     name: "Yhorby Matias",
     title: "DevOps Engineer",
     charla: "Crea Entornos de Prueba Automáticos con Azure y Argo CD",
-    imageUrl: "public/speakersnoBG/YhorbyMatias2.png",
+    imageUrl: "/speakersnoBG/YhorbyMatias2.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Soy un apasionado de la tecnología con más de 9 años de experiencia, comenzando como desarrollador back-end antes de hacer el salto a DevOps. Mi especialidad es diseñar arquitecturas en la nube con Azure, AWS y GCP, optimizando infraestructuras y workflows, además de liderar migraciones de entornos on-premise a la nube.",
@@ -68,7 +68,7 @@ export const speakers = [
     name: "Juan Gonzalez",
     title: "Ingeniero Electrico",
     charla: "Innovación, el motor del desarrollo tecnológico",
-    imageUrl: "public/speakersnoBG/JuanGonzález2.png",
+    imageUrl: "/speakersnoBG/JuanGonzález2.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Dominicano, entusiasta de la Innovación, perpetuo estudiante, Profesor de Innovación en Barna Licenciaturas, Certificado como Innovation Associate por el Global Innovation Managment Institute, Ingeniero Electromecánico (PUCMM), posgrado en Dirección General y Maestría en Administración de Negocios (Barna Managment School), Diplomado en Transformación Digital (Ideox-Intec), Diplomado Soy Digital (EOI). Inversionista Ángel (Enlaces), Co fundador de Alterna Consultores, Elcon Suplidores Eléctricos, Palr Ingeniería y Drones del Campo.",
@@ -78,7 +78,7 @@ export const speakers = [
     name: "Karla Aquino",
     title: "IT Consultant",
     charla: "Beyond Code: Integrated Security with DevSecOps and SSDLC",
-    imageUrl: "public/speakersnoBG/KarlaAquino3.png",
+    imageUrl: "/speakersnoBG/KarlaAquino3.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Encargada de DevSecOps en el Centro Nacional de Ciberseguridad e Ingeniería de Sistemas de profesión. Cuento con más de 4 años de experiencia en desarrollo de software, más de 3 años en infraestructura Cloud/On-Premise y más de 3 años en seguridad de aplicaciones. En cuanto a mis intereses, disfruto de la música de Los Beatles y ABBA y mis series favoritas son FRIENDS y The Big Bang Theory.",
@@ -89,7 +89,7 @@ export const speakers = [
     title: " Full Stack Web Developer ",
     charla:
       "¡Tu Web en Modo Turbo! \n" + "Hacks para Desarrolladores\n" + " Pro",
-    imageUrl: "public/speakersnoBG/InesMontero1.png",
+    imageUrl: "/speakersnoBG/InesMontero1.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Mi nombre es Inés Montero, aficionada al cómputo y la literatura. Ingeniera en sistemas computacionales y desarrolladora web Full Stack oriunda de La Vega. Apasionada por el desarrollo web y el e-commerce, así como por el aprendizaje continuo.\n" +
@@ -104,7 +104,7 @@ export const speakers = [
     title: "Mobile Developer",
     charla:
       "Unleashing Full-Stack  Flutter: Building Powerful Apps with Serverpod ",
-    imageUrl: "public/speakersnoBG/AlbisonArias1.png",
+    imageUrl: "/speakersnoBG/AlbisonArias1.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Desarrollador Flutter entusiasta con más de 4 años creando experiencias móviles multiplataforma de alta calidad. Experto en UI/UX, código limpio y patrones de arquitectura. Trabajo en equipo, con ganas de aprender y apasionado por el futuro del Desarrollo Movil.",
@@ -115,7 +115,7 @@ export const speakers = [
     title: "Mobile Developer",
     charla:
       "Unleashing Full-Stack  Flutter: Building Powerful Apps with Serverpod ",
-    imageUrl: "public/speakersnoBG/GregoryPilar.png",
+    imageUrl: "/speakersnoBG/GregoryPilar.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Tengo una amplia experiencia trabajando como experto en DevOps y he guiado a equipos para aprovechar los servicios de Azure de manera efectiva. Mi profundo conocimiento de Azure, junto con ejemplos del mundo real, garantizará una sesión informativa y atractiva diseñada para profesionales deseosos de optimizar sus aplicaciones nativas de la nube.",
@@ -146,7 +146,7 @@ export const speakers = [
     name: "Johan Prevot",
     title: "Desarrollador de Software ",
     charla: "Inteligencia Artificial : Amiga o Enemigo del desarrollador",
-    imageUrl: "public/speakersnoBG/JohanPrevot1.png",
+    imageUrl: "/speakersnoBG/JohanPrevot1.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Graduado de Ing sistema y computación de la Universidad O&M. He realizado cursos ingeniera de requerimientos, AWS Cloud Computer, Azure y entre otros \n" +
@@ -160,7 +160,7 @@ export const speakers = [
     name: "Christopher Tineo",
     title: "Software Engineer.",
     charla: "Modern Deployment Strategies with Argo Rollouts",
-    imageUrl: "public/speakersnoBG/ChristopherTineo1.png",
+    imageUrl: "/speakersnoBG/ChristopherTineo1.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Christopher Tineo es organizador de la comunidad de Cloud Native Santo Domingo es un ingeniero de Software de la ciudad de Santo Domingo graduado en el INTEC. Es un apasionado de las comunidades open source y la metodología Devops. Su meta es organizar el primer evento de Kubernetes en el país y en el caribe en el año 2025.",
