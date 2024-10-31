@@ -34,16 +34,6 @@ export const speakers = [
       "Soy un ingeniero telemático y desarrollador de software al que le gusta crear software relacionado especialmente con la web, el aprendizaje automático y la inteligencia artificial. Entre los proyectos que tengo como parte de mis estudios de Machine Learning, hay un modelo que utiliza datos del mercado de bonos de Estados Unidos que me permite estimar el precio de un bono en función de sus últimas 10 transacciones. Quiero combinar mi experiencia como desarrollador de software completo y mi conocimiento de aprendizaje automático para crear productos que resuelvan problemas del mundo real.",
   },
   {
-    id: 4,
-    name: "Jose Martinez",
-    title: "Software Engineer",
-    charla: "Ingeniería de Datos con Apache Airflow",
-    imageUrl: "/speakersnoBG/JoseManuelMartinez3.png",
-    borderColor: "#008CF1", // Color de borde personalizado
-    details:
-      "Ingeniero de Software en Flatiron Software Corp. Santiaguero, egresado de la PUCMM y colaborador del Barcamp. Apasionado de los datos con experiencia trabajando con ingeniería de datos en diferentes tecnologías y casos de uso.",
-  },
-  {
     id: 5,
     name: "Ruth Castillo",
     title: "IT Consultant",
@@ -101,10 +91,12 @@ export const speakers = [
   {
     id: 10,
     name: "Albinson Arias",
+    name2:"Ermarlin Perez",
     title: "Mobile Developer",
     charla:
       "Unleashing Full-Stack  Flutter: Building Powerful Apps with Serverpod ",
     imageUrl: "/speakersnoBG/AlbisonArias1.png",
+    additionalImageUrl:"/speakersnoBG/AlbisonArias1.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Desarrollador Flutter entusiasta con más de 4 años creando experiencias móviles multiplataforma de alta calidad. Experto en UI/UX, código limpio y patrones de arquitectura. Trabajo en equipo, con ganas de aprender y apasionado por el futuro del Desarrollo Movil.",
@@ -154,16 +146,6 @@ export const speakers = [
       "10 años de experiencia en la creación de páginas web, amplio conocimiento de programación web (PHP, WORDPRESS), CSS, javascript, diseño de interfaz y experiencia de usuario (UI/UX), implementación CMS como Wordpress, además gestión de servidores linux para la publicación de portales web de alto trafico \n" +
       "\n" +
       "Dentro de mi portafolio esta empresa como Farmaconal, Grupo Diario Libre, Ministerio Elim, Shance Intercambio entre otras empresas",
-  },
-  {
-    id: 14,
-    name: "Christopher Tineo",
-    title: "Software Engineer.",
-    charla: "Modern Deployment Strategies with Argo Rollouts",
-    imageUrl: "/speakersnoBG/ChristopherTineo1.png",
-    borderColor: "#008CF1", // Color de borde personalizado
-    details:
-      "Christopher Tineo es organizador de la comunidad de Cloud Native Santo Domingo es un ingeniero de Software de la ciudad de Santo Domingo graduado en el INTEC. Es un apasionado de las comunidades open source y la metodología Devops. Su meta es organizar el primer evento de Kubernetes en el país y en el caribe en el año 2025.",
   },
   // {
   //   id: 14,
