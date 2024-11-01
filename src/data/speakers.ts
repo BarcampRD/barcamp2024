@@ -91,29 +91,38 @@ export const speakers = [
   {
     id: 10,
     name: "Albinson Arias",
-    name2:"Ermarlin Perez",
     title: "Mobile Developer",
     charla:
       "Unleashing Full-Stack  Flutter: Building Powerful Apps with Serverpod ",
     imageUrl: "/speakersnoBG/AlbisonArias1.png",
-    additionalImageUrl:"/speakersnoBG/AlbisonArias1.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Desarrollador Flutter entusiasta con más de 4 años creando experiencias móviles multiplataforma de alta calidad. Experto en UI/UX, código limpio y patrones de arquitectura. Trabajo en equipo, con ganas de aprender y apasionado por el futuro del Desarrollo Movil.",
   },
   {
     id: 11,
-    name: "Gregory Pilar",
+    name: "Ermarlin Perez",
     title: "Mobile Developer",
     charla:
-      "Unleashing Full-Stack  Flutter: Building Powerful Apps with Serverpod ",
+        "Unleashing Full-Stack  Flutter: Building Powerful Apps with Serverpod ",
+    imageUrl: "/speakersnoBG/ErmarlinPerez.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details:
+        "Tengo una amplia experiencia trabajando como experto en DevOps y he guiado a equipos para aprovechar los servicios de Azure de manera efectiva. Mi profundo conocimiento de Azure, junto con ejemplos del mundo real, garantizará una sesión informativa y atractiva diseñada para profesionales deseosos de optimizar sus aplicaciones nativas de la nube.",
+  },
+  {
+    id: 12,
+    name: "Gregory Pilar",
+    title: "DevOps Engineer",
+    charla:
+      "Unlock the Power of Azure Container Apps: A Comprehensive Guide for Modern Application Deployment",
     imageUrl: "/speakersnoBG/GregoryPilar.png",
     borderColor: "#008CF1", // Color de borde personalizado
     details:
       "Tengo una amplia experiencia trabajando como experto en DevOps y he guiado a equipos para aprovechar los servicios de Azure de manera efectiva. Mi profundo conocimiento de Azure, junto con ejemplos del mundo real, garantizará una sesión informativa y atractiva diseñada para profesionales deseosos de optimizar sus aplicaciones nativas de la nube.",
   },
   {
-    id: 12,
+    id: 13,
     name: "Felix Valerio",
     title: "Software Developer",
     charla:
@@ -134,7 +143,7 @@ export const speakers = [
       "Expirience as FullStack Developer in PHP (Laravel and Symfony) and Vue (Nuxt.js)",
   },
   {
-    id: 13,
+    id: 14,
     name: "Johan Prevot",
     title: "Desarrollador de Software ",
     charla: "Inteligencia Artificial : Amiga o Enemigo del desarrollador",
@@ -147,11 +156,66 @@ export const speakers = [
       "\n" +
       "Dentro de mi portafolio esta empresa como Farmaconal, Grupo Diario Libre, Ministerio Elim, Shance Intercambio entre otras empresas",
   },
+  {
+    id: 15,
+    name: "Luis Contreras",
+    title: "IT Infrastructure Monitoring Engineer",
+    charla: "Transformación Empresarial: Más Allá de la Gestión Convencional",
+    imageUrl: "/speakersnoBG/LuisContreras.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "With over 15 years of experience in IT, I am a passionate and versatile professional who enjoys delivering solutions that enhance business performance and user satisfaction. I have successfully coordinated and implemented complex projects across various industries, using my solid background in databases, data analysis, and process documentation.\n" +
+        "\n" +
+        "Currently, I am a coach, speaker, and trainer certified in the Maxwell method, where I help organizations and entrepreneurs apply the Maxwell brand leadership principles to unlock their true potential and achieve their goals. I also have expertise in Microsoft Power Platform, a powerful tool that enables me to drive digital transformation and create innovative solutions for business challenges. I am always eager to learn new skills, share my knowledge, and contribute to a fun and collaborative work environment.",
+  },
+  {
+    id: 16,
+    name: "Karvin Jiménez",
+    title: "Full Stack Developer",
+    charla: "RETRO GAME DEVELOPMENT",
+    imageUrl: "/speakersnoBG/KarvinJimenez.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Ingeniero en sistemas egresado de PUCMM. Desarrollador Web fullstack (.Net y React) de 4 años de experiencia. Desarrollador Movil (Kotlin y flutter) de 2 años de experiencia. Desarrollador de juegos como hobby (Libgdx, Raylib y SDL2).",
+  },
+  {
+    id: 17,
+    name: "Marcos Blanco",
+    title: "Computer Science Engineer",
+    charla: "Aprendizaje automático para predecir los niveles de depresión, ansiedad y estrés en estudiantes",
+    imageUrl: "/speakersnoBG/MarcosBlanco.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Soy ingeniero en Ciencias de la Computación, entusiasmado por iniciar mi carrera profesional y ansioso por contribuir con mis perspectivas e ideas frescas, especialmente en el ámbito de machine learning y data science. Estoy motivado por la oportunidad de enriquecer mis conocimientos y habilidades, y poseo competencias en el establecimiento de buenas relaciones interpersonales que facilitan el trabajo en equipo junto a profesionales expertos en estas áreas.",
+  },
+  {
+    id: 18,
+    name: "Darvy Betances",
+    title: "Software Engineer",
+    charla: "Creación de APIs REST con Spring Boot y MongoDB: Buenas Prácticas desde el Desarrollo hasta el Despliegue ",
+    imageUrl: "/speakersnoBG/DarvyBetances.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Somos estudiantes de Ingeniería en Ciencias de la Computación en la Pontificia Universidad Católica Madre y Maestra, apasionados por la tecnología y el desarrollo de software.\n" +
+        "\n" +
+        "Hemos notado que, en eventos anteriores, muchas charlas se enfocan en temas avanzados, lo que deja a los principiantes, como pre-universitarios y estudiantes de los primeros semestres, sintiéndose incómodos o desconectados.\n" +
+        "\n" +
+        "Nuestro objetivo es resolver este problema ofreciendo una charla accesible y enriquecedora, donde enseñamos paso a paso cómo crear una API básica usando Spring Boot y MongoDB. De esta forma, los asistentes podrán aprender buenas prácticas desde el desarrollo hasta el despliegue, independientemente de su nivel de experiencia.",
+  },
+  {
+    id: 19,
+    name: "Gabriel Cepeda",
+    title: "Full Stack Developer",
+    charla: "Creación de APIs REST con Spring Boot y MongoDB: Buenas Prácticas desde el Desarrollo hasta el Despliegue ",
+    imageUrl: "/speakersnoBG/gabrielcepeda.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Somos estudiantes de Ingeniería en Ciencias de la Computación en la Pontificia Universidad Católica Madre y Maestra, apasionados por la tecnología y el desarrollo de software.\n" +
+        "\n" +
+        "Hemos notado que, en eventos anteriores, muchas charlas se enfocan en temas avanzados, lo que deja a los principiantes, como pre-universitarios y estudiantes de los primeros semestres, sintiéndose incómodos o desconectados.\n" +
+        "\n" +
+        "Nuestro objetivo es resolver este problema ofreciendo una charla accesible y enriquecedora, donde enseñamos paso a paso cómo crear una API básica usando Spring Boot y MongoDB. De esta forma, los asistentes podrán aprender buenas prácticas desde el desarrollo hasta el despliegue, independientemente de su nivel de experiencia.",
+  },
   // {
   //   id: 14,
   //   name: "",
   //   title: "",
-  //   charla: " ",
+  //   charla: "",
   //   imageUrl: "",
   //   borderColor: "#008CF1", // Color de borde personalizado
   //   details: "",
