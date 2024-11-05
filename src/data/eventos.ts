@@ -144,13 +144,13 @@ const eventos = [
         horario: "TBA",
         lugar: "To be assigned",
     },
-    // {
-    //     ponente: "Ever Curiel",
-    //     actividad: "AI testing: La revolución de las pruebas de software y cómo los testers pueden liderar el cambio",
-    //     detalles: "",
-    //     etiquetas: [""],
-    //     horario: "TBA",
-    //     lugar: "To be assigned",
-    // },
+    {
+        ponente: "Freddy Peña",
+        actividad: "Full Stack 100% in Java? Vaadin Flow to the Rescue",
+        detalles: "Veremos cómo Vaadin Flow permite la creación de apps web completas en 100% Java. Destacaremos la capacidad para manejar tanto el frontend como el backend sin requerir tecnologías adicionales como HTML, CSS o JavaScript. Esto simplifica significativamente el desarrollo y la curva de aprendizaje.",
+        etiquetas: ["Java","Vaadin","VaadinFlow","SpringBoot","FullStack","WebDevelopment"],
+        horario: "TBA",
+        lugar: "To be assigned",
+    },
 ];
 export { eventos };

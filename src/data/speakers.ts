@@ -211,13 +211,27 @@ export const speakers = [
         "\n" +
         "Nuestro objetivo es resolver este problema ofreciendo una charla accesible y enriquecedora, donde enseñamos paso a paso cómo crear una API básica usando Spring Boot y MongoDB. De esta forma, los asistentes podrán aprender buenas prácticas desde el desarrollo hasta el despliegue, independientemente de su nivel de experiencia.",
   },
-  // {
-  //   id: 14,
-  //   name: "",
-  //   title: "",
-  //   charla: "",
-  //   imageUrl: "",
-  //   borderColor: "#008CF1", // Color de borde personalizado
-  //   details: "",
-  // },
+  {
+    id: 20,
+    name: "Freddy Peña",
+    title: "Software Engineer",
+    charla: "Full Stack 100% in Java? Vaadin Flow to the Rescue",
+    imageUrl: "/speakersnoBG/Freddy Peña.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Founder of Alphnology, a passionate Software Engineer and Vaadin Champioon with over 12 years of expertise in Java development and 6+ years of experience managing and implementing SAP B1 projects. Holding a Master’s degree in Web Engineering, I am also a dedicated educator currently teaching at PUCMM and an active member of the Dominican Java Community. I am skilled in designing, developing, and deploying high-performance, scalable applications using Java and various modern frameworks like Spring Boot, Vaadin Flow, Quarkus, Jakarta EE, Vert.x, and Hibernate. I am also an enthusiast of open-source projects. With proven experience in integrating enterprise-level software and managing end-to-end development lifecycles, I focus on code quality, system optimization, and scalability.\n" +
+        "\n" +
+        "My approach spans from developing enterprise applications to implementing cloud solutions, always adhering to best practices and maintaining high code quality. I am always learning about the latest emerging technologies and staying up-to-date with new trends in the software development world.\n" +
+        "\n" +
+        "Technical Skills\n" +
+        "Languages: Java, Python\n" +
+        "Java Frameworks: Spring Boot, VaadinFlow, Hibernate, Quarkus, Vert.x, Jakarta EE\n" +
+        "Architecture: Microservices, RESTful APIs, SOAP, Event-driven Architecture\n" +
+        "Databases: PostgreSQL, MySQL, SQL Server, MongoDB, Redis\n" +
+        "Development Tools: Maven, Git, Jenkins, SonarQube, Terraform, Flyway, Lombok\n" +
+        "Cloud & DevOps: AWS, Firebase, Docker, Terraform, Git Actions\n" +
+        "Testing: JUnit, Mockito, Cucumber\n" +
+        "UI: Vaadin, JSF, JavaFX, Java Swing\n" +
+        "Mobile: Android, Flutter\n" +
+        "Others: Linux, Nginx, Traefik, RabbitMQ, gRPC, Debezium",
+  },
 ];
