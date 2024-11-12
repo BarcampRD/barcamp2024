@@ -234,4 +234,28 @@ export const speakers = [
         "Mobile: Android, Flutter\n" +
         "Others: Linux, Nginx, Traefik, RabbitMQ, gRPC, Debezium",
   },
+  {
+    id: 21,
+    name: "Eudris Cabrera",
+    title: "Desarrollador Informático",
+    charla: "Mock y Test de APIs RESTful de forma sencilla con Microcks",
+    imageUrl: "/speakersnoBG/Eudris Cabrera.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "Desarrollador de software, líder de JUG, usuario de Linux, entusiasta del código abierto, Java Champion.\n" +
+        "\n" +
+        "Ganador de la beca Linux Training Scholarship 2014 en la categoría Developer Do-Gooder. Miembro asociado del JCP (Java Community Process). Co-fundador / Organizador del grupo de usuarios Java (Java User Group ) de la República Dominicana (aka Java Dominicano) y miembro del staff organizador de JConf Dominicana. Miembro del comité organizador de JakartaOne Livestream en Español en las ediciones 2020, 2021 y 2023.\n" +
+        "\n" +
+        "En el tiempo libre, escribe artículos, realiza charlas y ayuda en la revisión de documentación técnica en el mundo Java y el código abierto.",
+  },
+  {
+    id: 22,
+    name: "Ever Miguel Curiel",
+    title: "Líder de Capítulo Calidad de Software",
+    charla: "AI testing: La revolución de las pruebas de software y cómo los testers pueden liderar el cambio",
+    imageUrl: "/speakersnoBG/Ever Curiel.png",
+    borderColor: "#008CF1", // Color de borde personalizado
+    details: "¡Hola!\n" +
+        "\n" +
+        "Soy Ever Curiel, Especialista en Aseguramiento de Calidad de Software con más de 10 años de experiencia y una gran pasión por la Inteligencia Artificial. Actualmente, lidero el Chapter de SQA en el Banco BHD y soy Host del podcast y canal de youtube La Escuela del Testing. Como cofundador de QA Dominicana, promuevo las mejores prácticas en la comunidad de calidad. También soy conferencista, docente, y curioso hasta lo ultimo.",
+  },
 ];
