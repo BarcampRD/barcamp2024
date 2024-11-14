@@ -104,14 +104,17 @@ const eventos = [
         horario: "2:00 PM",
         lugar: "Sala #3, Padre Arroyo",
     },
-    {
-        ponente: "Yhorby Matias",
-        actividad: "Crea Entornos de Prueba Automáticos con Azure y Argo CD",
-        detalles: "¿Quieres probar tus desarrollos en entornos automáticos sin complicaciones? Con Azure DevOps y Argo CD, te enseño cómo crear entornos de prueba para cada cambio de código, integrando GitOps. Valida tus funcionalidades antes de producción, agilizando tus despliegues fácilmente.",
-        etiquetas: ["Azure", "DevOps", "Kubernetes", "ArgoCD","GitOps","Automated Testing"],
-        horario: "2:00 PM",
-        lugar: "Sala #4, Padre Arroyo",
-    },
+
+    // NO ASISTIRA
+    // {
+    //     ponente: "Yhorby Matias",
+    //     actividad: "Crea Entornos de Prueba Automáticos con Azure y Argo CD",
+    //     detalles: "¿Quieres probar tus desarrollos en entornos automáticos sin complicaciones? Con Azure DevOps y Argo CD, te enseño cómo crear entornos de prueba para cada cambio de código, integrando GitOps. Valida tus funcionalidades antes de producción, agilizando tus despliegues fácilmente.",
+    //     etiquetas: ["Azure", "DevOps", "Kubernetes", "ArgoCD","GitOps","Automated Testing"],
+    //     horario: "2:00 PM",
+    //     lugar: "Sala #4, Padre Arroyo",
+    // },
+
     {
         ponente: "Marcos Blanco",
         actividad: "Aprendizaje automático para predecir los niveles de depresión, ansiedad y estrés en estudiantes",

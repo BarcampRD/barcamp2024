@@ -43,16 +43,20 @@ export const speakers = [
     details:
       "Ruth Castillo, Ing. Telemática de la Pontificia Universidad Católica Madre y Maestra (PUCMM), Magister en Dirección de Proyecto de la Escuela de Organización Industrial (EOI) Doble titulación con PUCMM, Profesional en Dirección de Proyectos (PMP®) Certificada por el Project Management Institute (PMI®) desde el 2020. Me describo como una entusiasta de gestionar proyectos que permitan la trasformacion digital y de la educacion.",
   },
-  {
-    id: 6,
-    name: "Yhorby Matias",
-    title: "DevOps Engineer",
-    charla: "Crea Entornos de Prueba Automáticos con Azure y Argo CD",
-    imageUrl: "/speakersnoBG/YhorbyMatias2.png",
-    borderColor: "#008CF1", // Color de borde personalizado
-    details:
-      "Soy un apasionado de la tecnología con más de 9 años de experiencia, comenzando como desarrollador back-end antes de hacer el salto a DevOps. Mi especialidad es diseñar arquitecturas en la nube con Azure, AWS y GCP, optimizando infraestructuras y workflows, además de liderar migraciones de entornos on-premise a la nube.",
-  },
+
+  // NO ASISTIRA
+
+  // {
+  //   id: 6,
+  //   name: "Yhorby Matias",
+  //   title: "DevOps Engineer",
+  //   charla: "Crea Entornos de Prueba Automáticos con Azure y Argo CD",
+  //   imageUrl: "/speakersnoBG/YhorbyMatias2.png",
+  //   borderColor: "#008CF1", // Color de borde personalizado
+  //   details:
+  //     "Soy un apasionado de la tecnología con más de 9 años de experiencia, comenzando como desarrollador back-end antes de hacer el salto a DevOps. Mi especialidad es diseñar arquitecturas en la nube con Azure, AWS y GCP, optimizando infraestructuras y workflows, además de liderar migraciones de entornos on-premise a la nube.",
+  // },
+
   {
     id: 7,
     name: "Juan Gonzalez",
