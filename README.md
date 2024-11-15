@@ -1,4 +1,4 @@
-# Sie Barcamp 2024
+# Site Barcamp 2024
 ![image](https://github.com/user-attachments/assets/2559e5a5-c6a1-4986-a9cf-d2c2ef76fefe)
 
 ## 🧞 Commands
