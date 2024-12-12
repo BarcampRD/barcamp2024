@@ -3,6 +3,16 @@ import type { TestimonialItem } from "../types/TestimonialItem";
 const allEvents: TestimonialItem[] = [
   {
     image: [
+      "/events/2024/barcamp2024Conjunto.JPG",
+      "/events/2024/barcamp2024Grupo1.JPG",
+      "/events/2024/barcamp2024Grupo2.JPG",
+      "/events/2024/barcamp2024Teatro.JPG",
+    ],
+    description: "Barcamp 2024",
+    link: "https://barcamp.org.do/",
+  },
+  {
+    image: [
       "/events/2023/DSC_0009.JPG",
       "/events/2023/DSC_0012.JPG",
       "/events/2023/DSC_0095.JPG",
